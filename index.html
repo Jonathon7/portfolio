@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Jonathon Flores</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro"
+      rel="stylesheet"
+    />
+    <script src="canvas.js" defer></script>
+    <script src="navbar.js" defer></script>
+    <script src="card.js" defer></script>
+  </head>
+  <body>
+    <nav class="nav-cont">
+      <div class="nav-links">
+        <a href="http://github.com/jonathon7"
+          ><img src="./images/github.png" alt=""
+        /></a>
+        <a href="https://linkedin.com/in/flores-jonathon"
+          ><img src="./images/linkedin.png" alt=""
+        /></a>
+        <a href="./Jonathon's Resume (6).pdf" target="_blank" class="resume"
+          >Resume</a
+        >
+      </div>
+      <div class="name">
+        <h1>JONATHON</h1>
+      </div>
+    </nav>
+    <div class="main-cont">
+      <div class="mobile-links">
+        <ul>
+          <li onclick="aboutMe()">About Me</li>
+          <li onclick="mySkills()">Skills</li>
+          <li onclick="myProjects()">Projects</li>
+        </ul>
+      </div>
+      <div class="card" id="card">
+        <div class="about">
+          <h1>About Me</h1>
+          <div>
+            <img src="./images/_DSC7040.jpg" alt="" />
+            <p>
+              I am a web developer from Midland, Tx. After spending some time in
+              college, I started teaching myself web development and learned
+              that I had a love for coding. I eventually found my way to
+              DevMountain to accelerate my learning and find my way into the web
+              development community.
+            </p>
+          </div>
+        </div>
+        <div class="skills">
+          <h1>Skills</h1>
+          <div>
+            <img src="./icons/javascript.png" alt="" />
+            <img src="./icons/react.png" alt="" />
+            <img src="./icons/node.png" alt="" />
+            <img src="./icons/express.png" alt="" />
+            <img src="./icons/redux.png" alt="" />
+            <img src="./icons/html.png" alt="" />
+            <img src="./icons/css.png" alt="" />
+            <img src="./icons/git.png" alt="" />
+          </div>
+        </div>
+        <div class="projects">
+          <h1>Projects</h1>
+          <div class="talko-cont">
+            <p>Talko.io</p>
+            <a href="http://talko.io" target="_blank"
+              ><img src="" alt=""/>
+              <img
+                src="./images/Screen Shot 2019-03-01 at 3.08.23 PM.png"
+                alt=""
+                class="talko"
+            /></a>
+
+            <p>
+              A live chat support system built with React. This project is
+              intended for React developers to easily integrate our live chat
+              system by downloading our package through npm. As part of a four
+              person team, I was tasked to build the UI components and style
+              them as well as the talko.io website.
+            </p>
+          </div>
+          <div>
+            <p>Breakout</p>
+            <a href="http://breakoutjs.net" target="_blank"
+              ><img
+                src="./images/Screen Shot 2019-03-01 at 2.43.03 PM.png"
+                alt=""
+                class="breakout"
+            /></a>
+
+            <p>
+              This game was made with JavaScript rendered on the HTML5 Canvas
+              tag. I also made a full step-by-step turorial on how to make make
+              this game from start to finish. It covers drawing shapes with
+              canvas, animations, collision detection, win and lose states,
+              power ups, and paddle controls.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="scroll">
+        <ul>
+          <li onclick="aboutMe()">About Me</li>
+          <li onclick="mySkills()">Skills</li>
+          <li onclick="myProjects()">Projects</li>
+        </ul>
+      </div>
+    </div>
+    <canvas id="myCanvas"></canvas>
+  </body>
+</html>
